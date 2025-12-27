@@ -88,3 +88,31 @@ buttons.forEach((btn) => {
     });
   });
 });
+
+// --- Gestion des Modales Projets ---
+
+// Fonction pour ouvrir une modale spécifique
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Empêche le scroll derrière
+  }
+}
+
+// Fonction pour fermer une modale
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Réactive le scroll
+  }
+}
+
+// Fermer la modale si on clique en dehors du contenu
+window.onclick = function(event) {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+}

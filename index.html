@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Achraf, a computer-science student and developer based in Toulouse.">
+    <meta name="description" content="Portfolio d'Achraf, étudiant en informatique et développeur basé à Toulouse.">
 
-    <title>Achraf Ameri</title>
+    <title>Achraf Ameri Portfolio</title>
 
     <!-- Link -->
     <link
@@ -48,6 +48,40 @@
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" id="logo">
+          <img src="assets/logo.png" alt="Logo Achraf"> 
+        </a>
+        
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a href="#timeline" class="nav-link">Expérience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projets</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
     <header id="hero">
       <section class="header-container">
         <script
@@ -63,13 +97,13 @@
           loop
         ></dotlottie-wc>
         
-        <h1>Hi I'm Achraf</h1>
+        <h1>Achraf Ameri</h1>
 
         <div class="content-text">
-          <h2>Software developer</h2>
+          <h2>Développeur Logiciel</h2>
 
           <p>
-            A 3rd year computer-science student at IUT Blagnac specialized in software development.
+            Étudiant en 3ème année de BUT Informatique à l'IUT de Blagnac, spécialisé en réalisation d'applications.
           </p>
         </div>
 
@@ -106,13 +140,13 @@
           </li>
         </ul>
 
-        <a class="animated-button" href="CV ALT AMERI.pdf" target="_blank">
+        <a class="animated-button" href="CV Stage AMERI.pdf" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
             <path
               d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
             ></path>
           </svg>
-          <span class="text">CV / RESUME</span>
+          <span class="text">Voir mon CV</span>
           <span class="circle"></span>
           <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
             <path
@@ -125,18 +159,21 @@
     </header>
 
     <!-- About me -->
-    <section id="about" class="about-container container">
-      <div class="content-text">
-        <h2>About Me</h2>
+    <section id="about" class="about-container container" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+      <div class="about-img" style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="assets/profile-photo.jpg" alt="Achraf Ameri" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; box-shadow: var(--shadow);">
+      </div>
+
+      <div class="content-text" style="flex: 2; text-align: left;">
+        <h2 style="text-align: left;">À propos de moi</h2>
         <p>
-          I'm Achraf, a passionate developer still studying at the IUT of Blagnac, focusing on building robust and efficient software solutions. I enjoy building clean, efficient, and user-friendly applications. 
-          I'm passionate about solving real-world problems with code and continuously learning new technologies.
+          Futur développeur logiciel, je suis actuellement en 3ème année de BUT Informatique à l'IUT de Blagnac. Passionné par la conception d'applications robustes, j'ai développé une expertise en <strong>Java, Python et Angular</strong>.
         </p>
         <p>
-          I have experience with full-stack development, including Java, Python, PHP, Angular, and SQL databases. I value teamwork, curiosity, and software quality.
+          Mon parcours est marqué par une mobilité internationale, notamment lors d'un stage de deux mois aux Pays-Bas chez <strong>Vectory3</strong>, où j'ai optimisé des processus de modélisation 3D pour le secteur médical.
         </p>
         <p>
-          Currently looking for apprenticeship opportunities in software development to apply my skills and grow as a developer.
+          Je suis aujourd'hui à la recherche d'un <strong>Stage</strong> pour consolider mes compétences et contribuer au développement de solutions logicielles innovantes au sein de votre équipe.
         </p>
       </div>
     </section>
@@ -145,13 +182,13 @@
     <section id="skills" class="container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Skills & Expertise</h2>
-        <p>Technologies and tools I've recently worked with</p>
+        <h2>Compétences Techniques</h2>
+        <p>Langages, frameworks et outils</p>
       </div>
 
       <!-- Languages -->
       <div class="skills-category">
-        <h3>Languages</h3>
+        <h3>Langages</h3>
         <div class="skills-grid-row">
           <div class="skill-item" style="--skill-color: #f89820;">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java"><span>Java</span>
@@ -186,7 +223,7 @@
 
       <!-- Databases -->
       <div class="skills-category">
-        <h3>Databases</h3>
+        <h3>Bases de Données</h3>
         <div class="skills-grid-row">
           <div class="skill-item" style="--skill-color: #f80000;">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="Oracle SQL"><span>Oracle SQL</span>
@@ -202,7 +239,7 @@
 
       <!-- Tools -->
       <div class="skills-category">
-        <h3>Tools & Platforms</h3>
+        <h3>Outils & Environnements</h3>
         <div class="skills-grid-row">
           <div class="skill-item" style="--skill-color: #fcc624;">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span>
@@ -227,8 +264,8 @@
     <section id="timeline" class="container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Experience</h2>
-        <p>Education and professional internships</p>
+        <h2>Mon Parcours</h2>
+        <p>Formation académique et expériences professionnelles</p>
       </div>
 
       <div class="tabs">
@@ -240,13 +277,13 @@
           <li title="Education">
             <label for="tab1" role="button">
               <svg viewBox="0 0 24 24"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 13l-7-3.18V17l7 3 7-3v-5.18L12 15z"/></svg>
-              <br><span>Education</span>
+              <br><span>Formation</span>
             </label>
           </li>
           <li title="Internships">
             <label for="tab2" role="button">
               <svg viewBox="0 0 24 24"><path d="M9 2L7.17 3.83 14.34 11H3v2h11.34l-7.17 7.17L9 22l11-11L9 2z"/></svg>
-              <br><span>Internships</span>
+              <br><span>Stages</span>
             </label>
           </li>
         </ul>
@@ -258,26 +295,24 @@
         <div class="content">
           <!-- Education -->
           <section>
-            <h2>Education</h2>
-            <h3>📘 Bachelor's Degree in Computer Science (BUT Informatique)</h3>
+            <h3>📘 BUT Informatique (Bachelor Universitaire Technologique)</h3>
             <p style="padding-top: 10px; padding-bottom: 20px;">
               <a href="https://www.iut-blagnac.fr" target="_blank" style="text-decoration: none; color: #007bff;">
-                IUT of Blagnac
-              </a> — 2023 to 2026
+                IUT Blagnac
+              </a> — 2023 - 2026
             </p>
-            <p>Program focused on software development, databases, system architecture, web technologies, and project management. Gained technical and methodological skills to design and maintain software applications.</p>
+            <p>Formation axée sur le développement logiciel, les bases de données, l'architecture système et la gestion de projet. Acquisition de compétences techniques et méthodologiques pour la conception d'applications complexes.</p>
           </section>
 
           <!-- Internships -->
           <section>
-            <h2>Internships</h2>
             <h3>
               💼 <a href="https://vectory3.com/" target="_blank" style="color: #007bff; text-decoration: none;">
                 Vectory3
               </a>
             </h3>
-            <p style="padding-top: 10px; padding-bottom: 20px;">The Hague, Netherlands — March 2025 to May 2025</p>
-            <p>Worked on developing software features for the custom medical tool Metrix 5. Contributed to improving 3D modeling in Blender using Python scripts. Collaborated with a technical team in an agile development environment.</p>
+            <p style="padding-top: 10px; padding-bottom: 20px;">La Haye, Pays-Bas — Mars 2025 - Mai 2025</p>
+            <p>Développement de fonctionnalités logicielles pour l'outil médical Metrix 5. Optimisation de la modélisation 3D sous Blender via des scripts Python. Collaboration au sein d'une équipe technique internationale en méthode Agile.</p>
           </section>
         </div>
       </div>
@@ -287,86 +322,355 @@
     <section id="projects" class="project-container container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Projects</h2>
-        <p>Check out some of my personal and academic projects</p>
+        <h2>Projets</h2>
+        <p>Aperçu de mes réalisations académiques et personnelles</p>
       </div>
 
-      <article class="project">
+      <article class="projects-grid">
         <!-- Project 1 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Daily Bank</h3>
-              <p>JavaFx, Oracle-SQL</p>
-            </div>
-
-            <div class="project-link">
-              <a href="https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-2a3" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+        <article class="project-item">
+          
+          <div class="card" onclick="openModal('modal-dailybank')">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>Daily Bank</h3>
+                <p>Application de gestion bancaire Java/Oracle</p>
+                <span class="btn-text" style="color: var(--primary-color); font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                  <i class="fas fa-plus-circle"></i> Voir les détails & compétences
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div id="modal-dailybank" class="modal">
+            <div class="modal-content">
+              <span class="close-modal" onclick="closeModal('modal-dailybank')">&times;</span>
+              
+              <div class="modal-body">
+                <h3>Daily Bank</h3>
+                
+                <div class="modal-section">
+                  <h4><i class="fas fa-bullseye"></i> Contexte & Besoin</h4>
+                  <p>
+                    Dans le cadre de ma formation, le réseau d'agences bancaires "DailyBank" avait besoin de moderniser son application de gestion de comptes. 
+                    L'objectif était de permettre aux guichetiers de gérer les comptes clients (virements, débits) et aux chefs d'agence de gérer les employés.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-cogs"></i> Solution Technique</h4>
+                  <p>
+                    Développement d'une application lourde en <strong>Java</strong> avec interface <strong>JavaFX</strong>. 
+                    La persistance des données est assurée par une base <strong>Oracle SQL</strong>, utilisant des procédures stockées pour sécuriser les transactions complexes.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-laptop-code"></i> Compétences Mobilisées</h4>
+                  <div class="skill-tags">
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-dailybank')">Développement Java</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-dailybank')">Base de données Oracle</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-dailybank')">Gestion de projet (Agile)</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-dailybank')">Git & Versioning</a>
+                  </div>
+                </div>
+
+                <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                  <a href="https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-2a3" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Voir le code source
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
 
         <!-- Project 2 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Nautic Horizon</h3>
-              <p>PHP, MySQL, JS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-G2A-9" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="http://symfony.iut-blagnac.fr/~R2024SAE3005/WEB/PHP/index.php" target="_blank"><i class="fas fa-globe"></i></a>
+        <article class="project-item">
+          <div class="card" onclick="openModal('modal-nautic')">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>Nautic Horizon</h3>
+                <p>Site E-commerce de location de bateaux</p>
+                <span class="btn-text" style="color: var(--primary-color); font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                  <i class="fas fa-plus-circle"></i> Voir les détails & compétences
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div id="modal-nautic" class="modal">
+            <div class="modal-content">
+              <span class="close-modal" onclick="closeModal('modal-nautic')">&times;</span>
+              <div class="modal-body">
+                <h3>Nautic Horizon</h3>
+                
+                <div class="modal-section">
+                  <h4><i class="fas fa-bullseye"></i> Contexte & Besoin</h4>
+                  <p>
+                    Projet académique visant à créer une plateforme web complète pour une entreprise fictive de location et vente de bateaux. 
+                    Le besoin était de gérer un catalogue produits, les comptes clients et un panier d'achat sécurisé.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-cogs"></i> Solution Technique</h4>
+                  <p>
+                    Réalisation d'un site dynamique en <strong>PHP</strong> natif (architecture MVC) couplé à une base de données <strong>MySQL</strong>. 
+                    L'interface responsive a été conçue en HTML/CSS et JavaScript pour l'interactivité client.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-laptop-code"></i> Compétences Mobilisées</h4>
+                  <div class="skill-tags">
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-nautic')">Développement Web (PHP)</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-nautic')">Base de données MySQL</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-nautic')">Conception MVC</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-nautic')">JavaScript & UX</a>
+                  </div>
+                </div>
+
+                <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                  <a href="https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-G2A-9" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Code Source
+                  </a>
+                  <a href="http://symfony.iut-blagnac.fr/~R2024SAE3005/WEB/PHP/index.php" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-globe"></i> Voir le site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <!-- Porject 3 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>The Cyber Grill</h3>
-              <p>Angular, TS, RESTapi</p>
-            </div>
-
-            <div class="project-link">
-              <a href="https://github.com/AchrafAmeri/Projet-Angular-S4-2025" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+        <article class="project-item">
+          <div class="card" onclick="openModal('modal-cybergrill')">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>The Cyber Grill</h3>
+                <p>Application de gestion de restaurant (Angular)</p>
+                <span class="btn-text" style="color: var(--primary-color); font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                  <i class="fas fa-plus-circle"></i> Voir les détails & compétences
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div id="modal-cybergrill" class="modal">
+            <div class="modal-content">
+              <span class="close-modal" onclick="closeModal('modal-cybergrill')">&times;</span>
+              <div class="modal-body">
+                <h3>The Cyber Grill</h3>
+                
+                <div class="modal-section">
+                  <h4><i class="fas fa-bullseye"></i> Contexte & Besoin</h4>
+                  <p>
+                    Développement d'une solution pour restaurateurs permettant la gestion dynamique des menus et des commandes en temps réel. 
+                    L'objectif était de proposer une interface fluide (SPA) et performante.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-cogs"></i> Solution Technique</h4>
+                  <p>
+                    Application Front-End développée avec le framework <strong>Angular</strong> et <strong>TypeScript</strong>. 
+                    Consommation d'une API REST externe pour la gestion des données, avec une attention particulière portée au typage strict et à la modularité du code.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-laptop-code"></i> Compétences Mobilisées</h4>
+                  <div class="skill-tags">
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-cybergrill')">Framework Angular</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-cybergrill')">TypeScript</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-cybergrill')">Consommation API REST</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-cybergrill')">Architecture Composants</a>
+                  </div>
+                </div>
+
+                <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                  <a href="https://github.com/AchrafAmeri/Projet-Angular-S4-2025" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Code Source
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <!-- Project 4 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>InMyGarden</h3>
-              <p>HTML, CSS, JS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="https://github.com/AchrafAmeri/InMyGarden-WS" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+        <article class="project-item">
+          <div class="card" onclick="openModal('modal-garden')">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>InMyGarden</h3>
+                <p>Site Vitrine Corporate (HTML/CSS)</p>
+                <span class="btn-text" style="color: var(--primary-color); font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                  <i class="fas fa-plus-circle"></i> Voir les détails & compétences
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div id="modal-garden" class="modal">
+            <div class="modal-content">
+              <span class="close-modal" onclick="closeModal('modal-garden')">&times;</span>
+              <div class="modal-body">
+                <h3>InMyGarden</h3>
+                
+                <div class="modal-section">
+                  <h4><i class="fas fa-bullseye"></i> Contexte & Besoin</h4>
+                  <p>
+                    Conception et développement du site vitrine pour la société mère de Vectory3. 
+                    L'objectif était de digitaliser l'image de marque de l'entreprise, de mettre en avant son catalogue de réalisations et de présenter clairement ses offres de services aux clients potentiels.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-cogs"></i> Solution Technique</h4>
+                  <p>
+                    Réalisation d'une interface web moderne et épurée en <strong>HTML5</strong> et <strong>CSS3</strong>, assurant une identité visuelle professionnelle. 
+                    Le site est entièrement <strong>responsive</strong> (adapté mobiles/tablettes) et intègre du JavaScript pour fluidifier la navigation et l'expérience utilisateur.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-laptop-code"></i> Compétences Mobilisées</h4>
+                  <div class="skill-tags">
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-garden')">Intégration Web (HTML/CSS)</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-garden')">Responsive Design</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-garden')">Communication Visuelle</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-garden')">JavaScript (DOM)</a>
+                  </div>
+                </div>
+
+                <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                  <a href="https://github.com/AchrafAmeri/InMyGarden-WS" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Code Source
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <!-- Project 5 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Metrix</h3>
-              <p>Blender, Python</p>
-            </div>
-
-            <div class="project-link">
-              <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
-              <a href="https://corporate.vectory3.com" target="_blank"><i class="fas fa-globe"></i></a>
-              <a href="https://curatio-scan.com" target="_blank"><i class="fas fa-globe"></i></a>
+        <article class="project-item">
+          <div class="card" onclick="openModal('modal-metrix')">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>Metrix (Stage)</h3>
+                <p>Outil médical 3D (Python/Blender)</p>
+                <span class="btn-text" style="color: var(--primary-color); font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                  <i class="fas fa-plus-circle"></i> Voir les détails & compétences
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div id="modal-metrix" class="modal">
+            <div class="modal-content">
+              <span class="close-modal" onclick="closeModal('modal-metrix')">&times;</span>
+              <div class="modal-body">
+                <h3>Projet Metrix (Stage chez Vectory3)</h3>
+                
+                <div class="modal-section">
+                  <h4><i class="fas fa-bullseye"></i> Contexte & Besoin</h4>
+                  <p>
+                    Au sein de l'entreprise Vectory3 (Pays-Bas), j'ai travaillé sur le logiciel médical "Metrix". 
+                    Le besoin était d'automatiser le traitement de scans 3D de patients pour la conception d'attelles sur mesure.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-cogs"></i> Solution Technique</h4>
+                  <p>
+                    Développement de scripts <strong>Python</strong> au sein de l'API de <strong>Blender</strong>. 
+                    Création d'algorithmes pour optimiser les maillages 3D et extraire des mesures précises à partir des scans bruts.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-laptop-code"></i> Compétences Mobilisées</h4>
+                  <div class="skill-tags">
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-metrix')">Python (Scripting)</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-metrix')">Modélisation 3D (Blender)</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-metrix')">Travail en équipe internationale</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-metrix')">Anglais technique (B2)</a>
+                  </div>
+                </div>
+
+                <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                  <a href="https://corporate.vectory3.com" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-building"></i> Voir l'entreprise
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-item">
+          <div class="card" onclick="openModal('modal-locura')">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>Locura4IoT VR</h3>
+                <p>Jumeau Numérique & Visualisation IoT en VR</p>
+                <span class="btn-text" style="color: var(--primary-color); font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                  <i class="fas fa-plus-circle"></i> Voir les détails & compétences
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal-locura" class="modal">
+            <div class="modal-content">
+              <span class="close-modal" onclick="closeModal('modal-locura')">&times;</span>
+              <div class="modal-body">
+                <h3>Locura4IoT VR</h3>
+                
+                <div class="modal-section">
+                  <h4><i class="fas fa-bullseye"></i> Contexte & Besoin</h4>
+                  <p>
+                    Optimisation d'une solution de visualisation immersive pour réseaux IoT sur casque <strong>Meta Quest</strong>. 
+                    L'objectif était de transformer des logs de données brutes en une représentation spatiale 3D intuitive (Jumeau Numérique) et de rendre l'application accessible via une refonte complète de l'expérience utilisateur (UX).
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-cogs"></i> Solution Technique</h4>
+                  <p>
+                    Développement sous <strong>Unity (C#)</strong> avec intégration du protocole <strong>MQTT</strong> pour la réception de données en temps réel.
+                    <br><br>
+                    • <strong>Parsing Dynamique :</strong> Création d'un générateur de nœuds capable d'instancier différentes formes 3D (cubes, sphères, cylindres) selon les propriétés JSON reçues.<br>
+                    • <strong>UX/UI Design :</strong> Conception d'interfaces "World Space" lisibles (mode sombre/transparent) et développement d'un tutoriel interactif intégré pour guider l'utilisateur.
+                  </p>
+                </div>
+
+                <div class="modal-section">
+                  <h4><i class="fas fa-laptop-code"></i> Compétences Mobilisées</h4>
+                  <div class="skill-tags">
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-locura')">Unity 3D & C#</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-locura')">Réalité Virtuelle (VR)</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-locura')">Protocole MQTT</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-locura')">UX/UI Design</a>
+                    <a href="#skills" class="skill-tag" onclick="closeModal('modal-locura')">Parsing JSON (Regex)</a>
+                  </div>
+                </div>
+
+                <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                  <a href="https://github.com/AchrafAmeri/SAE-5-01-LocURa4IoT-2025-2026" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Code Source
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
       </article>
 
       <!-- <a href="#" class="btn btn-secondary"
@@ -374,9 +678,91 @@
       ></a> -->
     </section>
 
+    <section id="hobbies" class="container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Centres d'intérêt</h2>
+        <p>Ce qui me passionne en dehors du code</p>
+      </div>
+
+      <div class="hobbies-grid">
+
+        <div class="hobby-card">
+          <div class="icon-box">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Veille Technologique</h3>
+          <p>
+            Curieux des innovations hardware et logicielles. 
+            Intérêt particulier pour l'écosystème <strong>VR</strong> (Réalité Virtuelle) et l'IoT, explorés lors de mes projets.
+          </p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="icon-box">
+            <i class="fas fa-plane-departure"></i>
+          </div>
+          <h3>Voyages & Culture</h3>
+          <p>
+            Goût pour l'international renforcé par mon expérience aux <strong>Pays-Bas</strong>. 
+            J'apprécie découvrir de nouveaux environnements et pratiquer l'anglais au quotidien.
+          </p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="icon-box">
+            <i class="fas fa-car-side"></i>
+          </div>
+          <h3>SimRacing & Drift</h3>
+          <p>
+            Passionné de simulation automobile (Assetto Corsa). 
+            Recherche de la trajectoire idéale, réglages techniques (télémétrie) et maîtrise de la concentration sous pression.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- <section id="contact" class="container" style="margin-bottom: 5rem;">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Me Contacter</h2>
+        <p>Une opportunité ? Une question ? N'hésitez pas à m'écrire.</p>
+      </div>
+
+      <div class="contact-container">
+        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" class="contact-form">
+          
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" required placeholder="Objet du message">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer;">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
+        </form>
+      </div>
+    </section> -->
+
     <footer id="footer">
       <div class="container">
-        <p>Copyright &copy; Achraf Ameri <span id="datee"></span>, All rights reserved</p>
+        <p>&copy; Achraf Ameri <span id="datee"></span>. Tous droits réservés.</p>
       </div>
     </footer>
     <script src="js/script.js"></script>
